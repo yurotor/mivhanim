@@ -2,3 +2,4 @@
 .playwright-mcp/
 .vercel/
 .DS_Store
+.vercel
