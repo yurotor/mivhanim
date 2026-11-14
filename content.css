@@ -32,6 +32,24 @@
 .subnav a[aria-current="page"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
 .subnav a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
+/* quiz version switcher (גרסה א / ב / ג) */
+.vernav { display: flex; gap: 8px; flex-wrap: wrap; margin: -6px 0 20px; }
+.vernav[hidden] { display: none; }
+.vernav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink-2);
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line, var(--surface-2));
+  background: var(--surface);
+}
+.vernav a:hover { border-color: var(--subj); }
+.vernav a[aria-current] { background: var(--subj); border-color: var(--subj); color: #fff; }
+.vernav a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.doc .ver-title { margin-top: 8px; }
+
 /* headings inside content */
 .doc h2 {
   font-size: 22px;
@@ -259,7 +277,7 @@
 
 @media print {
   .doc { background: #fff; font-size: 13px; }
-  .doc .back, .doc .subnav, .doc .mini { display: none; }
+  .doc .back, .doc .subnav, .doc .vernav, .doc .mini { display: none; }
   .doc h2 { break-after: avoid; }
   .doc .box, .doc .verse, .doc table { break-inside: avoid; box-shadow: none; }
 }

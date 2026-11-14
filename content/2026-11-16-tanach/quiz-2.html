@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בוחן (גרסה ב) – תנ&quot;ך</title>
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../content.css">
+</head>
+<body class="doc" style="--subj:#65a30d">
+<main class="wrap">
+<a class="back" href="../../exam.html?id=2026-11-16-tanach">→ חזרה למבחן בתנ&quot;ך</a>
+<section class="hero">
+  <span class="tag">תנ&quot;ך · בוחן תרגול</span>
+  <h1>בוחן בתנ&quot;ך – שמואל ב פרקים א, ה – גרסה ב</h1>
+  <div class="hero-facts"><span>שמואל ב פרק א + שמואל ב פרק ה</span><span>100 נקודות + 5 בונוס</span></div>
+  <div class="namebox"><label for="name">שם:</label><input type="text" id="name" autocomplete="off"></div>
+</section>
+<nav class="subnav" aria-label="חומרי המבחן"><a href="study.html">📖 עזר ללמידה</a><a href="quiz-1.html" aria-current="page">✏️ בוחן</a><a href="answers.html#v2">✅ תשובות</a></nav>
+<nav class="vernav" aria-label="גרסאות הבוחן"><a href="quiz-1.html" data-v="1">גרסה א</a><a href="quiz-2.html" aria-current="page" data-v="2">גרסה ב</a><a href="quiz-3.html" data-v="3">גרסה ג</a></nav>
+
+<div id="result" aria-live="polite"></div>
+
+<form id="quiz" autocomplete="off">
+<div id="sections"></div>
+
+<div class="actions">
+  <button type="submit" id="submit">הגשה וחישוב ציון</button>
+  <button type="button" id="reset">התחלה מחדש</button>
+</div>
+<p class="note">בשאלות הפתוחות הציון מחושב אוטומטית לפי הרעיונות המרכזיים שמופיעים בתשובה, ולכן הוא משוער. כדאי שמבוגר יעבור על התשובות מול דף התשובות.</p>
+</form>
+</main>
+<script>
+const CFG = {"id":"2026-11-16-tanach:v2","salt":"2026-11-16-tanach|v2|","max":100,"sections":[{"type":"mc","title":"חלק א: שאלות אמריקאיות","short":"חלק א – אמריקאיות","points":5,"max":40,"sub":"5 נק' לכל שאלה – 40 נק'","items":[{"id":"q1","text":"איפה נהרגו שאול ובניו?","options":["בעמק רפאים","בצקלג","בהר הגלבוע","בחברון"],"h":"e6822ff23bc633122e47dd2cc332026fe8114a3e7907ac624ffa620bc88d048b"},{"id":"q2","text":"איך נראה הנער כשהגיע לדוד?","options":["לבוש בגדי מלכות","בגדיו קרועים ואדמה על ראשו","פצוע וחבוש","לבוש שק ואפר על ראשו"],"h":"fd9422f9427ef6daa6b2e5cea11d4bc9d684ecd27ef98edb114863bb06b64d12"},{"id":"q3","text":"מה ענה הנער כשדוד שאל אותו \"אי מזה אתה?\"","options":["בן איש גר עמלקי אנכי","בן איש פלשתי אנכי","משבט בנימין אנכי","מאנשי צקלג אנכי"],"h":"eb2803602fcd6da68fef460784422e2ead801e7c27560cfca9bc06c620b70005"},{"id":"q4","text":"באילו ערים ביקש דוד \"אל תגידו... אל תבשרו\"?","options":["בחברון ובירושלים","בצור ובצידון","בגת ובאשקלון","בגבע ובגזר"],"h":"233fba6e751851bb610e6b26c936a6dd8d2a56288e8d4b4f125186bc6444a18e"},{"id":"q5","text":"איפה נמשח דוד למלך על כל ישראל?","options":["בבית לחם","בחברון","בירושלים","בצקלג"],"h":"dda8b4d8b6f07b1f33dc506c77f62f73ebff4be898691481a36f783cd8b2bbd6"},{"id":"q6","text":"איך קרא דוד למצודת ציון אחרי שכבש אותה?","options":["עיר דוד","בית המלך","עיר הקודש","מצודת יהודה"],"h":"d1d985ce28f2d856e853c13d9bf5a452aa946ec1cb20cc8abdb57c44f68cf78a"},{"id":"q7","text":"מה השאירו הפלשתים מאחור אחרי המפלה בבעל פרצים?","options":["את הנזר והאצעדה","את עצביהם (פסלי האלילים)","את הרכב והפרשים","את עצי הארזים"],"h":"200fab2e66807be12c5d96abe3363ff82f4e3ecf87d0a52fb470da930a002e1c"},{"id":"q8","text":"מי מהבנים שנולדו לדוד בירושלים יהיה המלך הבא?","options":["נתן","יהונתן","אבינדב","שלמה"],"h":"ab226662033ab8e38f5ece0484bab251dfe5239134c3356426c3db8e3c5dfaeb"}]},{"type":"match","title":"חלק ב: מי אמר למי?","short":"חלק ב – מי אמר למי","points":4,"max":16,"quote":true,"labels":["מי אמר?","למי?"],"choices":["שאול","דוד","ה'","הנער העמלקי","נושא כלי שאול","שבטי ישראל","היבוסים","חירם מלך צור"],"sub":"4 נק' לכל פריט – 16 נק'","items":[{"id":"m9","text":"\"איך ידעת כי מת שאול ויהונתן בנו?\"","h":["404f62bca8d6a102c8a052fc94928d8d9c3ad5278e4fed01554fed8cacdac06b","dda9c7a72226a9e98f5acd1f75453fb407f4e6deebefac4a8b74c2ecab625fd7"]},{"id":"m10","text":"\"פן יבואו הערלים האלה ודקרוני והתעללו בי\"","h":["8bb92f59588d0e870b9c769e0f597ab95aeeb58e3f3e84e7c7fb3734b8c77cc8","00c667bec6731622b16e74fa97486a29f7e8fb4fc07aeb97874794445e2c4fb5"]},{"id":"m11","text":"\"גם אתמול גם שלשום... אתה היית המוציא והמביא את ישראל\"","h":["9d99487837f122590339e73e93503fb5ce332d8befc2c307f6b582c3cfe46ab3","655f453c5fd922a392c97a516cd7130b17fca9492feafd9fef60532b319dbe12"]},{"id":"m12","text":"\"האעלה אל פלשתים? התתנם בידי?\"","h":["146822863c55ed4d592e32f08ee81d31ffe49543d5b63e3d03dff3dddd5e4f9d","b5f8dcbd11e095edb2d9cef9b375ad6a63d03d0e4043b926c81ffc6603816091"]}]},{"type":"open","title":"חלק ג: שאלות פתוחות","short":"חלק ג – שאלות פתוחות","max":44,"sub":"44 נק' + 5 בונוס","items":[{"id":"o13","text":"תארו את תגובת דוד לבשורה על מות שאול – בשני שלבים.","points":8,"need":3,"bonus":false,"groups":[["6d75297951754944adddd4877b0fe15b67002567984258f0a9c7817116c1ccfb","109415cc2b52bf83b7da11c3226f36f94e57e5f1df42033fe7e03977243078fe","89c18c1265a76f72f62669ad5814ee182226c963c913c1d822689908b288d185","29479fbb5d601762828798e8ae4c151f3ccda203fe5281e70d686defd7e54ba5","b7fe690b71e56559948b30ffe044426485c673728629cfa245fd4eba3eaa00f5","b75a5d2bf1bce60e7e409a9f08d8b6cc08d4c391fe8a5dadce433d8f82a13026","1db9167fd7bf61b4936c188a9c12f54724040a69878fda0da1c2ec2e1e1e24cb"],["ff114ad51154f221a5f4408c33fc06e91402faa290fee6b1b222895ed2dc72a2","823d0d4bf86d29a2f980dc2118f42efc04b63b52bce65c7de99da63d814a3b56","5798684134f01e13a1c99955019b92e126be5e4a21852b6b27b57e47689c64cb","09f16a342729ffa944f2f5710c17fd22b0c7e9eb1790b418e2997b5465bd2e85","cd4add6f7c55ab15b386f7fff28b4c920601deb3aa56f45b22b109ee1f0fbe8d","ffffe081b8a270a3c01ad867baf054184a84de4c44892470987091361e318dc4"],["cda787bcb5b46e8817b8cd8e859b37d558158b5eb4342f789c7ff2a8c5314e58","a906fde569be819ee606f9c14fea6c77e93477e576846706f5525286f1823e6e","2d4a727457ec14de83338818222fac1ac63516fadd78c97db5003dd8d67c4639"]]},{"id":"o14","text":"מה ההבדל בין החלק הציבורי לחלק האישי בקינת דוד?","points":6,"need":2,"bonus":false,"groups":[["5704244541ae811ae67310bd080720be242077da5c8c1e75dfa7bc5d5bbdcd57","681e519ee3cf12d3994f6ad4852a2fc29fe75a983f80b1dd824f2a6e54e74112","81b46334eb2d985e975a6eac16c1996a3f2f647a3104eadcb82e320be12193ba","d4dd07b155de1bd04a9f31336cc98a9fd9ecfc7915584e7195dd79e8bdc8be9e","b09f813f40e6daf2177e04c840d05165d9ce31721bda590e065742148d4bf842","e069cb015b9eb46b8cfeea2bf83c01489f521ce3fca418fc8fb1a170f7407513"],["1c4e990f950472ca1882d2e653cbe2a902b7edc2ab5d0c08013a6893da61141d","dea316ca823718448a3d51cd0d7b1889acceecc38b8c3dc9e484142f815c3bc0","b31aec85ab11288545bb21a87a5984fd48c44ee34508ceb1a83698bed1bbdc93","a1f1cf79ef80f68fad4f78569a3c35cca5f63fbec2eebc787bf145c8d36aacd9","f3dbb8b5cc7d802a7ffca5c1be4f7e2e1faa726244e7ad6893153e761f34dc70","955d011c9d61574a34601fc9dade0b904c102722a12243ae86e67e09a8456ae0"]]},{"id":"o15","text":"מדוע ביקש דוד \"אל תגידו בגת, אל תבשרו בחוצות אשקלון\"?","points":6,"need":2,"bonus":false,"groups":[["906aef7ab799d69dad52aec31691f45efbf4515bc41aa63821bba845be64212a","ecad8de1fdba2ecdaeeffec0fc171a71ff67ffc25c8e2fa0f2acca05cb37cb28","9be9277ef995cdb3f9e9ad97ae3446f8b4c632261497a135c8b49d482dba4626"],["7c43fb5867b9d6a4fcb1fc218f474c26282f938f46ad5b2790476177a48387bb","c7fb053cbfbf6f401ebb9144165c7515d99bb1dd2b61e40241ece032ead8169c","a06080d3e55ae4edc65407eaf1e7b0cccf7630a70584273dfd2eb18325db082b","19240103c212b41da3fe8350dae615c7aa413a03a765fee1e8cd5799b8bd2f1d","8607f93ad13749407f16a2df7677493a79a430eb2fc3bfcc452d3b400efe4479","98deef76e1e09eecfc7b177c13c102741f2f64485f36f888c02b47c39f6da76c"]]},{"id":"o16","text":"מה אמרו היבוסים לדוד, ואיך בכל זאת כבש דוד את ירושלים?","points":8,"need":3,"bonus":false,"groups":[["8328eabc8d719bef45b3038328982805e3498a31d7442e61c6fba2714cc75df6","b72512b372bd63eddd9e4aa0cf5d3d5648ad25afce150048dbaa0f388e4dc0bb","3cb5022d4f9657e6a87be7e5bec4cd07bb973be1db24b5b54b4757c94485ac92","8b455a6b6f3c8c59c026ba4bb2ef751b22e727651b5ee0eb9e2531ddfe4ce2dc","377c2808466e2f5c093f2b35ff6d32c7eade5b643dbdb001444c84479bdcd7c8","f4cdcd1ec83d5f65bbecd251e0a79b3d3f3b737c60e7cb0c8235c2a7f6145d73"],["82732d211ad1d94fe638efd625817ad5f3a80eed3aa71e45c01e7f97f92f6e49","49197e93025674bfc165df578393bcb550543230832403bb7a4f9f84670e9ffa","c1e620071522a876a78e6c86c1cba22677ac79c619b62844965ef27eff010ee3","5d57086825eb56de025971f79ae075c742dd6b02d233310111755474cf0cebac","cff03122747275aeb8742df6ab2cd1a400e575e02a7d173afd2f9707979e6692"],["f5866ea0085fac9b19cf50d14139c46972cc8212f10cdccacb7346ca3f2adf33","e1731f1a9fa20e301ce1da0f4338b27946df2f532a73f1e7c2806fee2879f196","28f6a1b332947fe0efb4c10bbc17b9502964f3bf62103a7a277f561cee2e863a","c49f564eacb804ad9e9894691bbcb94dab7bbd21605f70e0adf74a92ee840e01","f96a49125150c68f5fc18f335d2d8d6d021ed96fe544b9466a8d093e20f8f806"],["46ff80f1386bc4f872bb9eefef8dd582206c7baa77d8824b35d71bf88889a4ba","d28d7c9a1895822952905ee664180b66788ae05b3290105b4eeb83d2d8a36c23"]]},{"id":"o17","text":"מה המשמעות של מה שעשה חירם מלך צור למען דוד, ומה הבין דוד מכך?","points":8,"need":3,"bonus":false,"groups":[["4e52fdc46fb6d3493dc892202c261cc0d20d3251b639763fbde18ad6692ddba2","07b4049979d5ae6dd314797bd2e77535ad1fa1032376f89a4feab9074965be2f","27fe105de05fd840c68be3aa38fe809855e1c737cdcbb4bf128636ec962e1f6f","e0afa3676b8bf138fbcf6e9ef5d836ac68ddae7f8d56a5c58d6b223d58bce348","61807bb6d505789f00f581068d2eaf52bbc2100375b72360f8162a1bf5be4f5b","f46d180083ae1f6f277074780218f1730e52165a4cb9d1402197589fb3eb5a3e"],["112469cd989126014f7f98624e827221d19816df98e2e7e63f5ea974c1fdeada","2d10d32afc09a74850733f46efa688b4232fbab9baa2de4a61afd8c0485c548e","9c695dea74aac114e7f09291512ccc667ac0e68bcda3d6588390a7f15314e714","f9e31bf29dde629fb0ad03e151e30c9cb5c00938b5bbbc654767f3a94c173374"],["d6df152cfd7955e3fd7368e46a5d7653f12e326a4f1ff1cf13b71b3b922b1449","2209eec2f7c0efcf8e9826fe99d0b3c943ec82cdf532d6159097568f0a5dd919","ee6c32301d542a80e621a6dfb67c93fdb835aecb726d5dd071ea5f695f1ada88","e0685a25d6805a4da110377e332c57694ee481e87c649fdf612d91863bbdc3e4"],["29efc5ef1665475e715e6e980436b6afb8489b64f4ffb9ed5d16044b1a6a2beb","d649e0a4ec43b890443768189a55f9a781532107f443015bb5980df0d1301543","28f2d3d187a5d24ec012e0d3b9e3487a98d6a2985806925a0a837db51326ea43","aa07961fa6bf1672ee1a507d9e2772f545bbe92abd1d0c8fad7792bc10df8024"]]},{"id":"o18","text":"דוד נמשח למלך שלוש פעמים. מי משח אותו בכל פעם, ועל מי מלך?","points":8,"need":3,"bonus":false,"groups":[["23812cf722166ea481369fdbb2ea240e86cfce3820360d0f42886533013cca25","74dc7ce6e1afe29611d67d68b0404a96b15ae8a4022008e46b742edb1717000f","814855d9156811a00d0c9a46649bd435e8b04718ff0de2a2409bf58bc48198ae","9d5ace37fe91ac309b073bc8405529345fde079c8591a45c25c622709600a5f7"],["7411dda7e38703ae974897312909fa0d368e5549274f94fe22cbb63e531d032b","1df0f49853c19eec0470b8295e91425fe4dc247286868841f7003ab4805b4f5a"],["e3dff018d1eac9a18c55f1af3037270fdaa61e7aff4d3196b5c112dfb35124fd","be4150fa8c392de0f74fa23b2186f7ae2e6519862114c22940b7b24ab9746c0f","1eaea15668fc0accdbf14e888d82a923feeaae1ff33cc8745194f7cc9f4c47f7"]]},{"id":"o19","text":"מה הקשר בין הניצחון של דוד על הפלשתים לבין מות שאול?","points":5,"need":2,"bonus":true,"groups":[["f4eddcfcb69351e297b809eca7aa47205ece4670d84bbe772a9c0ea6b50925e2","9f4988078cf6da334a05811de507ababe0de960859b2d08faac6e58cb5907fac","21d1be238e401a455dd08b2e193babd02841c8e98c0001bbdc1453e3f19c9489","f748301ea401f9d8b087882543830cb7b2912c3b32e0ad0d50de7de88c0ec880"],["68d13a3f7854a84f37e44ba6896ccd076172b163b09c171096247185b9598cb0","dd55575850d24c723414915105a72ed2c444a01d9ebab8eda46ed119f8494e88","d1429b002c8d542e767724b824d1119475bc9a3b299f3dda0c3fc6b37ee3a905","52c10ccc6369ee6c7386e05e3d91bfada401cc227181d8422e759226d4905ed5","0a5c139c257ddaa7e8cfd44dbd7687b5a3ff663f2439ca9e4de14bdcc8bed456","ce5cc7d90710a808e453f1c30d1a7ac5d8a66cde6e58319fb19e1d14d39b5cf1"]]}]}]};
+// Practice quiz runtime. Expects a global CFG built by build.mjs.
+// Answers are never in the page: only salted SHA-256 hashes of them.
+const $ = s => document.querySelector(s);
+const enc = new TextEncoder();
+async function h(s){const b=await crypto.subtle.digest("SHA-256",enc.encode(CFG.salt+s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join("");}
+const LETTERS = "אבגדהוזח";
+const finals = {"ך":"כ","ם":"מ","ן":"נ","ף":"פ","ץ":"צ"};
+function norm(w){return w.toLowerCase().replace(/[֑-ׇ]/g,"").replace(/[ךםןףץ]/g,c=>finals[c]);}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const fmt = n => String(Math.round(n*10)/10);
+
+/* ---------- render ---------- */
+const form = $("#quiz");
+const host = $("#sections");
+let num = 0;
+CFG.sections.forEach(sec => {
+  const h2 = document.createElement("h2");
+  h2.innerHTML = `${esc(sec.title)} <small>(${esc(sec.sub)})</small>`;
+  host.appendChild(h2);
+  const box = document.createElement("div");
+  host.appendChild(box);
+  sec.items.forEach(q => {
+    const d = document.createElement("div"); d.className = "q"; d.dataset.id = q.id;
+    if (sec.type === "mc") {
+      d.innerHTML = `<div class="stem">${++num}. ${esc(q.text)} <span class="pts">${fmt(sec.points)} נק'</span></div>` +
+        q.options.map((o,j)=>`<label class="opt"><input type="radio" name="${q.id}" value="${j}"><span>${LETTERS[j]}. ${esc(o)}</span></label>`).join("") +
+        `<div class="fb"></div>`;
+    } else if (sec.type === "match") {
+      const sel = name => `<select name="${name}"><option value="">— בחרו —</option>${sec.choices.map(p=>`<option>${esc(p)}</option>`).join("")}</select>`;
+      d.innerHTML = `<div class="${sec.quote ? "quote" : "stem"}">${++num}. ${esc(q.text)} <span class="pts">${fmt(sec.points)} נק'</span></div>
+        <div class="qtrow">${sec.labels.map((lab,k)=>`<label>${esc(lab)}${sel(q.id+"_"+k)}</label>`).join("")}</div><div class="fb"></div>`;
+    } else {
+      const label = q.bonus ? "בונוס:" : (++num) + ".";
+      d.innerHTML = `<div class="stem">${label} ${esc(q.text)} <span class="pts">${fmt(q.points)} נק'</span></div><textarea name="${q.id}" placeholder="כתבו כאן את התשובה..."></textarea><div class="fb"></div>`;
+    }
+    box.appendChild(d);
+  });
+});
+
+/* ---------- selection highlight + draft save ---------- */
+const KEY = "quiz:" + CFG.id;
+function markSel(){document.querySelectorAll(".opt").forEach(l=>l.classList.toggle("sel",l.querySelector("input").checked));}
+function save(){try{const data={name:$("#name").value};new FormData(form).forEach((v,k)=>data[k]=v);localStorage.setItem(KEY,JSON.stringify(data));}catch(e){}}
+function load(){try{const data=JSON.parse(localStorage.getItem(KEY)||"{}");if(data.name)$("#name").value=data.name;
+  for(const [k,v] of Object.entries(data)){const els=form.elements[k];if(!els)continue;
+    if(els instanceof RadioNodeList){els.forEach(r=>r.checked=(r.value===v));}else els.value=v;}}catch(e){}markSel();}
+form.addEventListener("change",()=>{markSel();save();});
+form.addEventListener("input",save);$("#name").addEventListener("input",save);
+load();
+
+/* ---------- grading ---------- */
+async function wordHashes(text){
+  const out=new Set();
+  const words=norm(text).split(/[^א-תa-z0-9]+/).filter(Boolean);
+  for(const w of words){
+    const vars=new Set([w]);
+    if(w.length>3 && "והבכלמש".includes(w[0])){vars.add(w.slice(1));
+      if(w.length>4 && "הבכלמש".includes(w[1])) vars.add(w.slice(2));}
+    for(const v of vars) for(let k=3;k<=v.length;k++) out.add(v.slice(0,k));
+  }
+  const arr=[...out];const hs=await Promise.all(arr.map(h));return new Set(hs);
+}
+function fb(el,cls,msg){el.className="fb show "+cls;el.textContent=msg;}
+
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const btn=$("#submit");btn.disabled=true;btn.textContent="מחשב...";
+  const scores = CFG.sections.map(()=>0);
+  let bonus=0, bonusMax=0;
+
+  for (const [si, sec] of CFG.sections.entries()) {
+    for (const q of sec.items) {
+      const box=document.querySelector(`.q[data-id="${q.id}"]`);
+      const f=box.querySelector(".fb");
+      if (sec.type === "mc") {
+        const picked=form.elements[q.id].value;
+        let correct=-1;
+        for(let j=0;j<q.options.length;j++) if(await h("mc|"+q.id+"|"+j)===q.h){correct=j;break;}
+        box.querySelectorAll(".opt").forEach((l,j)=>{l.classList.remove("sel");if(j===correct)l.classList.add("right");else if(String(j)===picked)l.classList.add("wrong");});
+        if(picked===String(correct)){scores[si]+=sec.points;fb(f,"ok","נכון! +"+fmt(sec.points));}
+        else fb(f,"bad",(picked===""?"לא נענתה. ":"לא נכון. ")+"התשובה הנכונה: "+LETTERS[correct]);
+      } else if (sec.type === "match") {
+        const per = sec.points / sec.labels.length;
+        let pts=0;const msgs=[];
+        for (const [k,lab] of sec.labels.entries()) {
+          const s=form.elements[q.id+"_"+k];
+          const ok = s.value && (await h("m|"+q.id+"|"+k+"|"+s.value))===q.h[k];
+          s.classList.add(ok?"right":"wrong");
+          if(ok)pts+=per;else{
+            let ans="";for(const p of sec.choices) if((await h("m|"+q.id+"|"+k+"|"+p))===q.h[k]){ans=p;break;}
+            msgs.push(lab.replace(/[?:]\s*$/,"")+": "+ans);
+          }
+        }
+        scores[si]+=pts;
+        fb(f,pts===sec.points?"ok":pts?"mid":"bad",pts===sec.points?"מצוין! +"+fmt(pts):`+${fmt(pts)}. התשובה הנכונה – `+msgs.join(", "));
+      } else {
+        if (q.bonus) bonusMax += q.points;
+        const txt=form.elements[q.id].value.trim();
+        if(!txt){fb(f,"bad","לא נענתה. 0 נק'");continue;}
+        const hs=await wordHashes(txt);
+        let hit=0;for(const g of q.groups) if(g.some(x=>hs.has(x))) hit++;
+        const got=Math.min(hit,q.need);
+        const pts=Math.round(q.points*got/q.need);
+        if(q.bonus)bonus+=pts;else scores[si]+=pts;
+        fb(f,pts===q.points?"ok":pts?"mid":"bad",`זוהו ${got} מתוך ${q.need} רעיונות מרכזיים · ציון משוער: ${pts}/${q.points}`);
+      }
+    }
+  }
+
+  const total=Math.round(scores.reduce((a,b)=>a+b,0));
+  const name=$("#name").value.trim();
+  const r=$("#result");
+  const pct = total / CFG.max;
+  r.innerHTML=`<div>${name?esc(name)+", ":""}הציון שלך:</div>
+    <div class="grade">${total}${bonus?` <span style="font-size:1.4rem">+ ${bonus} בונוס</span>`:""}</div>
+    <table>
+      ${CFG.sections.map((s,i)=>`<tr><td>${esc(s.short)}${s.type==="open"?" (משוער)":""}</td><td>${fmt(scores[i])} / ${fmt(s.max)}</td></tr>`).join("")}
+      ${bonusMax?`<tr><td>בונוס</td><td>${bonus} / ${bonusMax}</td></tr>`:""}
+    </table>
+    <p class="note">${pct>=.9?"כל הכבוד! 🌟":pct>=.75?"יפה מאוד! כדאי לחזור על מה שפספסת.":"כדאי לחזור על דף ההסברים ולנסות שוב."}</p>`;
+  r.classList.add("show");
+  form.querySelectorAll("input,select,textarea").forEach(x=>x.disabled=true);
+  btn.textContent="הוגש";
+  r.scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+$("#reset").addEventListener("click",()=>{
+  try{localStorage.removeItem(KEY);}catch(e){}
+  HTMLFormElement.prototype.reset.call(form);
+  form.querySelectorAll("input,select,textarea").forEach(x=>{x.disabled=false;x.classList.remove("right","wrong");});
+  document.querySelectorAll(".opt").forEach(l=>l.classList.remove("right","wrong","sel"));
+  document.querySelectorAll(".fb").forEach(f=>f.className="fb");
+  $("#result").className="";$("#result").innerHTML="";
+  const b=$("#submit");b.disabled=false;b.textContent="הגשה וחישוב ציון";
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+</script>
+</body>
+</html>
