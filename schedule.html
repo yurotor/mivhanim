@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מערכת שעות ח'6</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap wide">
+    <header class="page-head">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1>מערכת שעות <span class="cls" id="cls"></span></h1>
+    </header>
+
+    <nav class="topnav" aria-label="ניווט">
+      <a href="index.html">📝 לוח מבחנים</a>
+      <a href="schedule.html" aria-current="page">🗓️ מערכת שעות</a>
+    </nav>
+
+    <div id="now"></div>
+
+    <div class="view-bar">
+      <div class="filters" id="days" role="tablist" aria-label="בחירת יום"></div>
+      <div class="filters" id="views" aria-label="תצוגה"></div>
+    </div>
+
+    <section id="schedule"></section>
+
+    <footer class="foot">מקור: מערכת השעות של Smart School · שעה 0 ויום ו' ריקים ולכן לא מוצגים</footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="schedule-data.js"></script>
+  <script src="common.js"></script>
+  <script src="schedule.js"></script>
+</body>
+</html>
