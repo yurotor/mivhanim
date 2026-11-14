@@ -33,7 +33,7 @@ window.EVENTS = [
   { id: "2026-11-08-literature", date: "2026-11-08", type: "quiz",  subject: "literature", title: "בוחן שכבתי בספרות",                 hours: "שעה 1",    hasContent: false },
   { id: "2026-11-12-arabic",     date: "2026-11-12", type: "quiz",  subject: "arabic",     title: "בוחן שכבתי בערבית",                 hours: "שעה 1",    hasContent: false },
   { id: "2026-11-16-tanach",     date: "2026-11-16", type: "exam",  subject: "tanach",     title: "מבחן שכבתי בתנ\"ך",                 hours: "שעות 1+2", hasContent: true },
-  { id: "2026-11-18-english",    date: "2026-11-18", type: "quiz",  subject: "english",    title: "בוחן שכבתי באנגלית – Unseen",       hours: "שעה 4",    hasContent: false },
+  { id: "2026-11-18-english",    date: "2026-11-18", type: "quiz",  subject: "english",    title: "בוחן שכבתי באנגלית – Unseen",       hours: "שעה 4",    hasContent: true },
   { id: "2026-11-22-lashon",     date: "2026-11-22", type: "exam",  subject: "lashon",     title: "מבחן שכבתי בלשון",                  hours: "שעות 3+4", hasContent: false },
   { id: "2026-11-26-math",       date: "2026-11-26", type: "exam",  subject: "math",       title: "מבחן שכבתי במתמטיקה",               hours: "שעות 3+4", hasContent: false },
   { id: "2026-11-30-science",    date: "2026-11-30", type: "exam",  subject: "science",    title: "מבחן שכבתי במדעים",                 hours: "שעות 3+4", hasContent: false },
