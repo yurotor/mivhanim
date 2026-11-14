@@ -1,6 +1,6 @@
 ---
 name: exam-pages
-description: Generate the three exam-prep pages (study guide with self-check mini-quizzes, interactive graded practice quiz, password-protected answer key) for an exam on this site, from a folder of exam topic material. Use when the user points at a folder of topics/material for an exam and wants study/quiz/answers pages "like the tanach exam", or asks to add content to an exam in data.js.
+description: Generate the three exam-prep pages (study guide with self-check mini-quizzes, interactive graded practice quiz in 3 versions with different questions, password-protected answer key covering all versions) for an exam on this site, from a folder of exam topic material. Use when the user points at a folder of topics/material for an exam and wants study/quiz/answers pages "like the tanach exam", or asks to add content to an exam in data.js.
 argument-hint: <topics-folder> [exam-id]
 ---
 
