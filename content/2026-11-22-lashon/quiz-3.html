@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בוחן (גרסה ג) – לשון</title>
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../content.css">
+</head>
+<body class="doc" style="--subj:#db2777">
+<main class="wrap">
+<a class="back" href="../../exam.html?id=2026-11-22-lashon">→ חזרה למבחן בלשון</a>
+<section class="hero">
+  <span class="tag">לשון · בוחן תרגול</span>
+  <h1>בוחן תרגול בלשון – גרסה ג</h1>
+  <div class="hero-facts"><span>מערכת הפועל ושבעת הבניינים, חלקי הדיבר, צירופים, מילות קישור, כינויי גוף וכתיבת טיעון</span><span>100 נקודות + 5 בונוס</span></div>
+  <div class="namebox"><label for="name">שם:</label><input type="text" id="name" autocomplete="off"></div>
+</section>
+<nav class="subnav" aria-label="חומרי המבחן"><a href="study.html">📖 עזר ללמידה</a><a href="quiz-1.html" aria-current="page">✏️ בוחן</a><a href="answers.html#v3">✅ תשובות</a></nav>
+<nav class="vernav" aria-label="גרסאות הבוחן"><a href="quiz-1.html" data-v="1">גרסה א</a><a href="quiz-2.html" data-v="2">גרסה ב</a><a href="quiz-3.html" aria-current="page" data-v="3">גרסה ג</a></nav>
+
+<div id="result" aria-live="polite"></div>
+
+<form id="quiz" autocomplete="off">
+<div id="sections"></div>
+
+<div class="actions">
+  <button type="submit" id="submit">הגשה וחישוב ציון</button>
+  <button type="button" id="reset">התחלה מחדש</button>
+</div>
+<p class="note">בשאלות הפתוחות הציון מחושב אוטומטית לפי הרעיונות המרכזיים שמופיעים בתשובה, ולכן הוא משוער. כדאי שמבוגר יעבור על התשובות מול דף התשובות.</p>
+</form>
+</main>
+<script>
+const CFG = {"id":"2026-11-22-lashon:v3","salt":"2026-11-22-lashon|v3|","max":100,"sections":[{"type":"mc","title":"חלק א: שאלות אמריקאיות","short":"חלק א – אמריקאיות","points":4,"max":40,"sub":"4 נק' לכל שאלה – 40 נק'","items":[{"id":"q1","text":"מה השורש של הפועל ״הִזְמַנְתֶּם״?","options":["ז.מ.נ","מ.נ.ת","ה.ז.מ","ז.מ.ת"],"h":"e6bed6d5b50b15942fbd962d5d6c2d026355bed92f4c758c71fa34003c5d04a4"},{"id":"q2","text":"״מחר נִכְתֹּב חיבור״ – באיזה גוף הפועל?","options":["מדבר (אני)","נוכחים (אתם)","נסתר (הוא)","מדברים (אנחנו)"],"h":"f14446f169d8e22df6743053c8462334aa90126b117963470aaa3428e618ddce"},{"id":"q3","text":"״הם״ הוא כינוי גוף:","options":["מדבר","נסתר","נוכח","אף אחד מהם"],"h":"5c270d33472be4fd034ee0fd5e1bcb90395a49005520589e5bdd05e5879d4b66"},{"id":"q4","text":"״הוא היה עייף, ובכל זאת המשיך ללמוד״ – מה מביע הביטוי ״בכל זאת״?","options":["סיבה","תוצאה","ויתור","מטרה"],"h":"4db945eb631aa80378c9c29574e44e8e72bb15c6822a010b4378ed28eace7876"},{"id":"q5","text":"איזו מילת קישור מביעה הוספה?","options":["אולם","אילו","מפני ש","בנוסף"],"h":"35c66c4d0869ca0052097310cdd5288a4e5ec338a57eebfd19dbf3506061cbd5"},{"id":"q6","text":"איזה מהצירופים הוא צירוף סמיכות?","options":["כוס גדולה","כוס תה","תה חם","הכוס החדשה"],"h":"d12c76ea5e9c3a97dc2f7114650e143ba4672bc773accec2214494e4192c4b90"},{"id":"q7","text":"בצירוף שם ותוארו, התואר מתאים לשם העצם:","options":["במין, במספר וביידוע","רק במספר","רק במין","הוא לא צריך להתאים"],"h":"e523bf29494bddcaa4b47e09cddd21e66dec58aae3a1d50a76984a994c66a6ca"},{"id":"q8","text":"לפי השיטה מהכיתה, את השורש, הגוף והזמן מנתחים לפי:","options":["צורת ״הוא אתמול״","שם הפועל","הפועל כפי שהוא מופיע במשפט","שם הפעולה"],"h":"ab97b661c70281b23fe2b4aaa55b704610201100f488dcf6f2ca039e8440490b"},{"id":"q9","text":"מה כולל הסיום בטיעון?","options":["נימוק חדש","הצגת הנושא","דוגמה ראשונה","מסקנה או המלצה"],"h":"b1d35c9f56d30b07411c0042dcdcdb4c04e4d125615c25ca1ba9cf80ab15e06d"},{"id":"q10","text":"״זו הייתה המסקנה של החוקרים״ – מה פירוש ״מסקנה״?","options":["השאלה בהתחלה","מה שלמדו או הבינו בסוף","הכלי שבו השתמשו","שם המחקר"],"h":"8450c5a285afce9785a22d7c0e99c596c5935e1384aadb1fde7b4b217e6ca7e0"}]},{"type":"match","title":"חלק ב: באיזה בניין? (העזרו בצורת ״הוא אתמול״)","short":"חלק ב – בניינים","points":3,"max":12,"quote":false,"labels":["בניין:"],"choices":["פָּעַל (קל)","נִפְעַל","הִפְעִיל","הֻפְעַל","פִּעֵל","פֻּעַל","הִתְפַּעֵל"],"sub":"3 נק' לכל פריט – 12 נק'","items":[{"id":"m11","text":"הרצים יִשְׁבְּרוּ את השיא.","h":["a638082f97246ee6907ab3cb50e086fc7ae6e96dfd200004080ca68e86480254"]},{"id":"m12","text":"הפרס הוּעֲנַק לזוכה.","h":["6aca5e61a622e1299ff1c9c4067ff1d075b9191c6ba1928b47ea3807374c9179"]},{"id":"m13","text":"מחר אֲבַקֵּר את סבתא.","h":["e819ef701dac072f54a30db8e780e69c4a687f0f190f7110dff509ea6493a7f1"]},{"id":"m14","text":"התלמידים הִתְלַבְּטוּ מה לבחור.","h":["334e7656fe6097701de3c4f0b6f369c0c4ecdf1b64bb55ef4c6224bc7f3b8af5"]}]},{"type":"match","title":"חלק ג: מהו חלק הדיבר של המילה שבסוגריים? (בחרו את התשובה המדויקת ביותר)","short":"חלק ג – חלקי דיבר","points":3,"max":12,"quote":false,"labels":["חלק הדיבר:"],"choices":["שם עצם","שם תואר","פועל","תואר הפועל","שם פועל","שם פעולה"],"sub":"3 נק' לכל פריט – 12 נק'","items":[{"id":"m15","text":"החלטנו [לצאת] מוקדם.","h":["7dbd54b1f512d4ebea198c5c0e9e0417ecd7478fa95f1200817ab6f8a77a5514"]},{"id":"m16","text":"השמלה [האדומה] תלויה בארון.","h":["af99afb78f10d8bbfee01b27fe2c856b83e75b3823a874dc0ee52ba3c93ccb57"]},{"id":"m17","text":"[השמירה] על הסביבה חשובה.","h":["2a5a24a4e6c92e76624d504574dfe00af664bd2ee2d8d865bb04ac5718870b79"]},{"id":"m18","text":"הם [הגיעו] בזמן.","h":["2fdd9b9ab65b4c61ca248ed61aa59673504d9483e63b8d980eac71e9393adedd"]}]},{"type":"open","title":"חלק ד: שאלות פתוחות","short":"חלק ד – פתוחות","max":36,"sub":"36 נק' + 5 בונוס","items":[{"id":"o19","text":"מהן שלוש קבוצות כינויי הגוף? כתבו את שם כל קבוצה ודוגמה לכינוי מכל קבוצה.","points":8,"need":3,"bonus":false,"groups":[["7401d071b4b5bbdab02eee2685545d7b1f02ecfce1742fe0b86cc0d5a9976a7c","4e7cf2fae854e92bf7d7eb7e807f2cfb77ad5ea72857401eb0b4ff407df8f95b","18f53e43e31bcde75bac9c379a29c1741a6608bb8890f92718e60e1de0ef3226","21396eb0f3b688aaabbf776d1e255bf75d1fa64ed1d66780e84d0ce3053b7b34","f6fba39d47eb81274aaa03aea23f1e6bda3e672e1ba88ce4e377c9237cefc5d1"],["c5b9ec9cffd1e7cdd44e0ed8204a3071c9376441fc19331ac080078309272cd3","a25bbd2d7ede4760f9cc6dd61bfa850db654dd773adfbb859ccb98febe68ee19","2cb0bf3aec938f7c9e327972937849651eca7bafd56d22fcd01189ebc38cfcb6","9ca61a69fa0c586471ed3cf57b68bb5086c2f36101d2d35ddb0b6fe50abce9e8","7e0e277105292c7ba86f0cc87eb33da67574dfcd89e01eae92e8826b3e5090dc"],["cf679a78677d82dffd2f944e4cdb7706ebabb688a100a7cd5710843f64496417","4b9db850c8e4d467cfc0200d3997542a951986d304650002854ab2c99cfc838f","cbff97f356334d611cbc51f108603b821e204a23a8713461c4cf2f916962a5f4","1503a50a141df9ebc55584587aff3822dfbd857693bea6f55d728e30fcbbfdac"]]},{"id":"o20","text":"מה ההבדל בין נימוק לדוגמה בטיעון? למה חשוב להביא דוגמה?","points":8,"need":2,"bonus":false,"groups":[["062c1f77381bc2629f209341f087f008fc71ff1ad6e6786b707933087a243694","2934085aafb7f8b32d98efc694c2fa3a1c2845ce923a00294c4d41c62636574c","a77fe24b695e4a92720a95b0e732e65f9a21741b1591c70c4d5fb9ee16ca2d6a","4baba7b29e1316ad446561d710eb4fed0da67ac9d577c34d74cbe7fb4608955f","de98d871b50d36fa0d809b2179abeeda17fbecfef9d5c05a4b97e61178da1f9a"],["dd5af28025894df1c300b41b3dc6d657a9c3a7fd336ec9d1e0d618b96d1640ae","4fd0197d503303ae0a29b7de8f009f107538b33f21cbd8b07f26a676d525adc5","d721fb4507e05457e440bc10027bd4d7deca95ae8ce99020797a55cb6d20f9f6","04f80824d53fdd09fa47a0a93c56fe2db83d3a99ae6efd08b74d9cbfa6341d19","718e6a58ba1bcecee88238d01086305809ab541cfd2529fe4620f1a10e36112a","e39fad481802f9888f9ee34a4848a2911e5f9989e4a811890a67632f6e880233","9c12976a7074e9ab3474dbcf8648dd88a31c41e7a03e1192a24a21af4781dd54","bfd4f0d8e9f3ea881ed8c262ef234ac466f4d5eea2af8df0a7a8c13e206ff655","8b8cc6b8ec02d6a9ac297801056c1d39c1ad4b0544eb46ad57828d8009e992d9"]]},{"id":"o21","text":"כתבו משפט אחד עם מילת קישור של הוספה, ומשפט אחד עם מילת קישור של ויתור. (בחרו מילות קישור שאינן ״כי״ או ״אך״.)","points":8,"need":2,"bonus":false,"groups":[["b73f021f6eba48c469e764e08749fbf23a765f5fc0c20dd8c321a30761865190","fe4a37ec78c3239435a3bb07b990aaaf28da65c752bc147fb655e43ab0f34176","3a896ab4d774a4d29091cf456192402d3ab6066997dcd20633e484abe793bef6","34b89fb192c73ee99f69421ba2b8968aa25310f4f04059f0aab8e8a9e2d0f123","0b8caeace2f49b621251be4104badb839d19601053c38d9b2d4d352ba5587da8","46d6798309ad195bd8e409774fd90bc5837b703d38b60857b17c016a0420fe16"],["b4e357b2146f422743ce83f2dba412887d162ec265f6be2e329d4a625a82c65c","1054b1fc69fd38b964548fecf293f6c1a74bf411df444ba2ab046e6d34f3ca4d","fc107ffe625342e16bcc7f6505505c727bc99a60100c3bfd3a296c8b9b9cba7f"]]},{"id":"o22","text":"כתבו טיעון קצר (5–7 משפטים) בנושא: ״האם תלמידים צריכים ללבוש תלבושת אחידה?״. הקפידו על כל רכיבי הטיעון שלמדנו, והשתמשו במילות קישור מתאימות.","points":12,"need":4,"bonus":false,"groups":[["f74c2eca5d3d53eb0c3ede3fc291befc785e98a91550dc2b7c5492241094caf6","bbcf39b5b9336684f9e49f40fa81075a2cf8e67a5bd0b612ed9ddfd127c245ab","b2d41d9e701ca60389495f4697981c02e9b49bc47f8f26a0aa896c330067b82d","ec118a0668ebf5455ca284532161067f5572cee7f314077c707a6d22770c039f","5f37776846c6713e37c8b623f51b137c88638b0ed56b3ffd922f496df562a6e5","3cf2cce4ddeeea632702dc970f3070e18991f2eb8b02c6e091a41461766720f1","26cef21f77b8633b49ed4cb787d626277348111df53f7a39df883a957d1974e2","8f3591afe77271090bf309e5798d95875354ce48654a7116fbfe0be685f34139","88f15f3e27b3e903c93b7985fd7efbf6b255275f0dfbc9ef80afba42fd60601b"],["083ad1e6098aed04ba605e09c9354cf13599076dc159ac069cd75aac11d8b37b","206efb48781c598e80f003bfbc75d38281605c308e9be5e1eba51b020d44e59d","0389a7758ea13f33757a5808a19ac5cca8744f87cece9b4d287d1f567fc34620","af6711af52aa64d45bf3a82dce8534e6342e40f0beeda88336ad6d0bba08f93c","207070ce9b6c67778d48bc294e378fc43333abe3b4e4b81c334856e472bca269","bd59941b7f10a98fa34c99f1ecc7d520f49e60addd7deed47175afb71f6a906e","ba7b85fa6698f72ec276f8bc8f9ff6b1c7a125260af8d2086b8db57782db35b1","15878950f6cb4b1e4d90edfc8ba2344ff84bc7334c998f5ca92412e424575c51"],["9a9cf515515755c38d2c91fd675f7ea7aef9977d3014bbe3c012bfe388723c0c","39b5dba6c02f88be58da7ff745a72f5af01bfcfa40e406a49f7d7f0dcf18b004","9dcf9e2052da135763f94207aa68f2a4a66be6de6fd39ebf57e84286eb8b9ff8"],["53aec8b08865279b0e81cac5ef578c712722863be9638a1c558168bc063431dd","71f58d2f20462dcf66ff7d975a4706282ddf103ced71b3a69f93d75b9c18d594","0d270f4089a7274ceb854d812befcdeebd741098fe7c28f396a12832fb221369","d4993b4c8c15954770c83b76c6ebf33e442874dd5bf21986367eb244710be2dc","607522e9c76dffd2da60542393562e2e0d36ac91bf4da4e614e54c3217aea5ce","8d27486eab4cf84e2739207913cab38ca8b8f8f5bb1158447c8dd755f404d59d","b8928d330cfdbd2f0ad31ad5bac4d4d2c49cbeb42dc0339d9e7f9460e16dfbec"]]},{"id":"o23","text":"בונוס: למה חשוב לכתוב טיעון בשפה נאותה ומתאימה לכתיבה (ולא בסלנג)?","points":5,"need":1,"bonus":true,"groups":[["ab532bab4dce8d8ea921ff3360ee7f4a832abde9c025371a30cf519d742eec87","ebc3f70a4966c1e40688d67aaaec9c9e575775ae7c3cd23a70eaf40cc9a44146","8dd7e5612e07fb1c17cb978980077517dfa2162e9e841eefc9b873e76c14d6d5","98646a0f581678b5db3f168e42ba1e58f0c1b6a23b3fc57b2d5e3e5c156e051c","8b70b40f9ed13a26f9a86625e4acd3467d59b9eba21d46b0c8a4644764970755","26852f8cdd06c8a4383e70978bd7d5d8e747de87a8fcaf92ecdf1534d1b83ee0","ec808afeadd9bca3d44062629769a85e3a4560bd88f96d362c2c18c86194e029","67fdc9259216e68de4bea8239b0a3c9133cfde90164feabf1b7cf7345bdf7810"]]}]}]};
+// Practice quiz runtime. Expects a global CFG built by build.mjs.
+// Answers are never in the page: only salted SHA-256 hashes of them.
+const $ = s => document.querySelector(s);
+const enc = new TextEncoder();
+async function h(s){const b=await crypto.subtle.digest("SHA-256",enc.encode(CFG.salt+s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join("");}
+const LETTERS = "אבגדהוזח";
+const finals = {"ך":"כ","ם":"מ","ן":"נ","ף":"פ","ץ":"צ"};
+function norm(w){return w.toLowerCase().replace(/[֑-ׇ]/g,"").replace(/[ךםןףץ]/g,c=>finals[c]);}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const fmt = n => String(Math.round(n*10)/10);
+
+/* ---------- render ---------- */
+const form = $("#quiz");
+const host = $("#sections");
+let num = 0;
+CFG.sections.forEach(sec => {
+  const h2 = document.createElement("h2");
+  h2.innerHTML = `${esc(sec.title)} <small>(${esc(sec.sub)})</small>`;
+  host.appendChild(h2);
+  const box = document.createElement("div");
+  host.appendChild(box);
+  sec.items.forEach(q => {
+    const d = document.createElement("div"); d.className = "q"; d.dataset.id = q.id;
+    if (sec.type === "mc") {
+      d.innerHTML = `<div class="stem">${++num}. ${esc(q.text)} <span class="pts">${fmt(sec.points)} נק'</span></div>` +
+        q.options.map((o,j)=>`<label class="opt"><input type="radio" name="${q.id}" value="${j}"><span>${LETTERS[j]}. ${esc(o)}</span></label>`).join("") +
+        `<div class="fb"></div>`;
+    } else if (sec.type === "match") {
+      const sel = name => `<select name="${name}"><option value="">— בחרו —</option>${sec.choices.map(p=>`<option>${esc(p)}</option>`).join("")}</select>`;
+      d.innerHTML = `<div class="${sec.quote ? "quote" : "stem"}">${++num}. ${esc(q.text)} <span class="pts">${fmt(sec.points)} נק'</span></div>
+        <div class="qtrow">${sec.labels.map((lab,k)=>`<label>${esc(lab)}${sel(q.id+"_"+k)}</label>`).join("")}</div><div class="fb"></div>`;
+    } else {
+      const label = q.bonus ? "בונוס:" : (++num) + ".";
+      d.innerHTML = `<div class="stem">${label} ${esc(q.text)} <span class="pts">${fmt(q.points)} נק'</span></div><textarea name="${q.id}" placeholder="כתבו כאן את התשובה..."></textarea><div class="fb"></div>`;
+    }
+    box.appendChild(d);
+  });
+});
+
+/* ---------- selection highlight + draft save ---------- */
+const KEY = "quiz:" + CFG.id;
+function markSel(){document.querySelectorAll(".opt").forEach(l=>l.classList.toggle("sel",l.querySelector("input").checked));}
+function save(){try{const data={name:$("#name").value};new FormData(form).forEach((v,k)=>data[k]=v);localStorage.setItem(KEY,JSON.stringify(data));}catch(e){}}
+function load(){try{const data=JSON.parse(localStorage.getItem(KEY)||"{}");if(data.name)$("#name").value=data.name;
+  for(const [k,v] of Object.entries(data)){const els=form.elements[k];if(!els)continue;
+    if(els instanceof RadioNodeList){els.forEach(r=>r.checked=(r.value===v));}else els.value=v;}}catch(e){}markSel();}
+form.addEventListener("change",()=>{markSel();save();});
+form.addEventListener("input",save);$("#name").addEventListener("input",save);
+load();
+
+/* ---------- grading ---------- */
+async function wordHashes(text){
+  const out=new Set();
+  const words=norm(text).split(/[^א-תa-z0-9]+/).filter(Boolean);
+  for(const w of words){
+    const vars=new Set([w]);
+    if(w.length>3 && "והבכלמש".includes(w[0])){vars.add(w.slice(1));
+      if(w.length>4 && "הבכלמש".includes(w[1])) vars.add(w.slice(2));}
+    for(const v of vars) for(let k=3;k<=v.length;k++) out.add(v.slice(0,k));
+  }
+  const arr=[...out];const hs=await Promise.all(arr.map(h));return new Set(hs);
+}
+function fb(el,cls,msg){el.className="fb show "+cls;el.textContent=msg;}
+
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const btn=$("#submit");btn.disabled=true;btn.textContent="מחשב...";
+  const scores = CFG.sections.map(()=>0);
+  let bonus=0, bonusMax=0;
+
+  for (const [si, sec] of CFG.sections.entries()) {
+    for (const q of sec.items) {
+      const box=document.querySelector(`.q[data-id="${q.id}"]`);
+      const f=box.querySelector(".fb");
+      if (sec.type === "mc") {
+        const picked=form.elements[q.id].value;
+        let correct=-1;
+        for(let j=0;j<q.options.length;j++) if(await h("mc|"+q.id+"|"+j)===q.h){correct=j;break;}
+        box.querySelectorAll(".opt").forEach((l,j)=>{l.classList.remove("sel");if(j===correct)l.classList.add("right");else if(String(j)===picked)l.classList.add("wrong");});
+        if(picked===String(correct)){scores[si]+=sec.points;fb(f,"ok","נכון! +"+fmt(sec.points));}
+        else fb(f,"bad",(picked===""?"לא נענתה. ":"לא נכון. ")+"התשובה הנכונה: "+LETTERS[correct]);
+      } else if (sec.type === "match") {
+        const per = sec.points / sec.labels.length;
+        let pts=0;const msgs=[];
+        for (const [k,lab] of sec.labels.entries()) {
+          const s=form.elements[q.id+"_"+k];
+          const ok = s.value && (await h("m|"+q.id+"|"+k+"|"+s.value))===q.h[k];
+          s.classList.add(ok?"right":"wrong");
+          if(ok)pts+=per;else{
+            let ans="";for(const p of sec.choices) if((await h("m|"+q.id+"|"+k+"|"+p))===q.h[k]){ans=p;break;}
+            msgs.push(lab.replace(/[?:]\s*$/,"")+": "+ans);
+          }
+        }
+        scores[si]+=pts;
+        fb(f,pts===sec.points?"ok":pts?"mid":"bad",pts===sec.points?"מצוין! +"+fmt(pts):`+${fmt(pts)}. התשובה הנכונה – `+msgs.join(", "));
+      } else {
+        if (q.bonus) bonusMax += q.points;
+        const txt=form.elements[q.id].value.trim();
+        if(!txt){fb(f,"bad","לא נענתה. 0 נק'");continue;}
+        const hs=await wordHashes(txt);
+        let hit=0;for(const g of q.groups) if(g.some(x=>hs.has(x))) hit++;
+        const got=Math.min(hit,q.need);
+        const pts=Math.round(q.points*got/q.need);
+        if(q.bonus)bonus+=pts;else scores[si]+=pts;
+        fb(f,pts===q.points?"ok":pts?"mid":"bad",`זוהו ${got} מתוך ${q.need} רעיונות מרכזיים · ציון משוער: ${pts}/${q.points}`);
+      }
+    }
+  }
+
+  const total=Math.round(scores.reduce((a,b)=>a+b,0));
+  const name=$("#name").value.trim();
+  const r=$("#result");
+  const pct = total / CFG.max;
+  r.innerHTML=`<div>${name?esc(name)+", ":""}הציון שלך:</div>
+    <div class="grade">${total}${bonus?` <span style="font-size:1.4rem">+ ${bonus} בונוס</span>`:""}</div>
+    <table>
+      ${CFG.sections.map((s,i)=>`<tr><td>${esc(s.short)}${s.type==="open"?" (משוער)":""}</td><td>${fmt(scores[i])} / ${fmt(s.max)}</td></tr>`).join("")}
+      ${bonusMax?`<tr><td>בונוס</td><td>${bonus} / ${bonusMax}</td></tr>`:""}
+    </table>
+    <p class="note">${pct>=.9?"כל הכבוד! 🌟":pct>=.75?"יפה מאוד! כדאי לחזור על מה שפספסת.":"כדאי לחזור על דף ההסברים ולנסות שוב."}</p>`;
+  r.classList.add("show");
+  form.querySelectorAll("input,select,textarea").forEach(x=>x.disabled=true);
+  btn.textContent="הוגש";
+  r.scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+$("#reset").addEventListener("click",()=>{
+  try{localStorage.removeItem(KEY);}catch(e){}
+  HTMLFormElement.prototype.reset.call(form);
+  form.querySelectorAll("input,select,textarea").forEach(x=>{x.disabled=false;x.classList.remove("right","wrong");});
+  document.querySelectorAll(".opt").forEach(l=>l.classList.remove("right","wrong","sel"));
+  document.querySelectorAll(".fb").forEach(f=>f.className="fb");
+  $("#result").className="";$("#result").innerHTML="";
+  const b=$("#submit");b.disabled=false;b.textContent="הגשה וחישוב ציון";
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+</script>
+</body>
+</html>
