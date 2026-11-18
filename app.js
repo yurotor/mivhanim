@@ -1,8 +1,8 @@
 (function () {
   const today = todayDate();
-  // Only show what's still ahead: anything ending today or earlier is hidden.
+  // Only show today and what's still ahead: anything that ended before today is hidden.
   const events = window.EVENTS
-    .filter((e) => endOf(e) > today)
+    .filter((e) => !isPast(e, today))
     .sort((a, b) => a.date.localeCompare(b.date));
 
   const FILTERS = [
@@ -15,7 +15,7 @@
 
   // Past exams that have study material: exactly the events hidden above, limited to tests with content, newest first.
   const pastWithContent = window.EVENTS
-    .filter((e) => !(endOf(e) > today) && isTest(e) && e.hasContent)
+    .filter((e) => isPast(e, today) && isTest(e) && e.hasContent)
     .sort((a, b) => b.date.localeCompare(a.date));
   const listFor = (f) => (f.key === "past" ? pastWithContent : events.filter(f.test));
 
