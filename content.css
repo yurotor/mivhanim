@@ -281,3 +281,16 @@
   .doc h2 { break-after: avoid; }
   .doc .box, .doc .verse, .doc table { break-inside: avoid; box-shadow: none; }
 }
+
+/* ---------- tap-to-hear English words (content/speak.js) ---------- */
+.say {
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: underline dotted color-mix(in srgb, var(--subj) 55%, transparent);
+  text-underline-offset: 3px;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color .15s;
+}
+.say:hover { background: color-mix(in srgb, var(--subj) 10%, transparent); }
+.say.speaking { background: color-mix(in srgb, var(--subj) 22%, transparent); }
+.say-hint { color: var(--ink-3); font-size: 14px; margin: -4px 0 12px; }

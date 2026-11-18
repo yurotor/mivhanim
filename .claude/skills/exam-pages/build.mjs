@@ -78,7 +78,7 @@ function shell({ title, tag, h1, facts = [], current, body, extraHero = "", answ
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../content.css">
-</head>
+${ev.subject === "english" ? `<script src="../speak.js" defer></script>\n` : ""}</head>
 <body class="doc" style="--subj:${color}">
 <main class="wrap">
 <a class="back" href="../../exam.html?id=${encodeURIComponent(spec.id)}">→ חזרה למבחן ב${esc(S)}</a>
