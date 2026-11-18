@@ -10,7 +10,14 @@
     { key: "tests", label: "מבחנים", test: isAssessment },
     { key: "holiday", label: "חופשות", test: (e) => e.type === "holiday" },
     { key: "events", label: "יום הורים ואירועים", test: (e) => e.type === "parents" || e.type === "milestone" },
+    { key: "past", label: "הצג מבחני עבר" },
   ];
+
+  // Past exams that have study material: exactly the events hidden above, limited to tests with content, newest first.
+  const pastWithContent = window.EVENTS
+    .filter((e) => !(endOf(e) > today) && isTest(e) && e.hasContent)
+    .sort((a, b) => b.date.localeCompare(a.date));
+  const listFor = (f) => (f.key === "past" ? pastWithContent : events.filter(f.test));
 
   let filter = store("filter");
   if (!FILTERS.some((f) => f.key === filter)) filter = "all";
@@ -51,7 +58,7 @@
   function renderFilters() {
     const nav = document.getElementById("filters");
     nav.innerHTML = FILTERS.map((f) => {
-      const n = events.filter(f.test).length;
+      const n = listFor(f).length;
       return `<button class="chip-btn" data-key="${f.key}" aria-pressed="${f.key === filter}">${f.label}<span class="n">${n}</span></button>`;
     }).join("");
     nav.onclick = (e) => {
@@ -109,7 +116,7 @@
   // ---------- timeline ----------
   function renderTimeline() {
     const f = FILTERS.find((x) => x.key === filter);
-    const list = events.filter(f.test);
+    const list = listFor(f);
     const el = document.getElementById("timeline");
     if (!list.length) {
       el.innerHTML = `<p class="empty-list">אין אירועים להצגה</p>`;

@@ -173,7 +173,6 @@ a.next { transition: transform .15s ease; }
 }
 
 .chip-btn .n { opacity: .6; margin-inline-start: 4px; }
-
 /* ---------- timeline ---------- */
 .month h2 {
   font-size: 15px;
